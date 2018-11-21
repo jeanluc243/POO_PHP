@@ -8,4 +8,11 @@ class Pere{
         static::affiche($nom);
     }    
 }
+//**************************************
+class Fils extends Pere{
+    static public function affiche($n){
+        echo "Je suis le fils $n";
+    }
+}
+Pere::info("Elisee");
 ?>
