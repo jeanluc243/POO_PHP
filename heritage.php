@@ -40,4 +40,8 @@
         }
 
     }
+    $act1=new Action('Elisee','20$','Ndola');
+    echo $act1->getinfo();
+    $emprunt=new Emprunt('Mizkael','20$','5');
+    echo $emprunt->getinfo();
 ?>
