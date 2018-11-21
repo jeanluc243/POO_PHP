@@ -14,4 +14,13 @@
             $this->tel=$tel;
             $this->nb_instance++;
         }
+        public function affiche(){
+            echo "$this->nom<br/>";
+            echo "$this->email<br/>";
+            echo "$this->tel<br/>";
+        }
+        public function __destruct(){
+            echo "<br/>La personne $this->nom est effacee<br/>";
+        }
+    }
 ?>
