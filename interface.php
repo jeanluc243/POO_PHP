@@ -22,4 +22,8 @@ class Point implements X,Y{
         return $calc;
     }
 }
+$p1=new Point();
+$a=$p1->abssis(5);
+$b=$p1->ordonnee(2);
+echo $p1->calcul($a,$b);
 ?>
