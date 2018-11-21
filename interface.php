@@ -3,4 +3,7 @@
 interface X{
     public function abssis($x);    
 }
+interface Y{
+    public function ordonnee($Y);
+}
 ?>
