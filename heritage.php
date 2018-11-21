@@ -26,4 +26,18 @@
             return $info;
         }
     }
+     //deuxieme class derivee
+     class Emprunt extends Valeur{
+        public $taux;
+        public function __construct($nom,$prix,$taux){
+            parent::__construct($nom,$prix);
+            $this->taux=$taux;
+        }
+        public function getinfo(){
+            $info="<h2>Les genies du $this->taux et du $this->nom</h2>";
+            $info.=parent::getinfo();//appel de la methode ecrite dans parent et concatenation
+            return $info;
+        }
+
+    }
 ?>
