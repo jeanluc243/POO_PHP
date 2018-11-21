@@ -13,5 +13,13 @@ class Point implements X,Y{
         $this->x=$x;
         return $this->x;
     }
+    public function ordonnee($y){
+        $this->y=$y;
+        return $this->y;
+    }
+    public function calcul($a,$b){
+        $calc=($a*$a+$b*$b);
+        return $calc;
+    }
 }
 ?>
