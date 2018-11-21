@@ -17,4 +17,9 @@ class Addition{
     }
     
 }
+class Show{
+    public function affiche($nb){
+        echo "<br/>$nb<br/>";
+    }
+}
 ?>
