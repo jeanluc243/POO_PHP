@@ -1,25 +1,34 @@
 <?php
 //---------poo---------------------------------
-class Action{
+class Action
+{
+
     const CITY="LSHI";
+    
     public $nom;    
     public $address;
     public $heurdeb;
     public $heurfin;    
-    public function info(){
+    
+    public function info()
+    {
         echo "Info par rapport au visite";
         $now=getdate();
         $hour=$now['hours'];
         $jour=$now['wday'];
-        if(($hour>=$this->heurdeb)&&($hour<=$this->heurfin)){
+        
+        if(($hour>=$this->heurdeb) && ($hour<=$this->heurfin))
+        {
             echo "<br/>L'hopital est ouvert!";
         }
-        else{
+        else
+        {
             echo "<br/>L'hopital est ferme";
             echo '<br/>'.$hour.'<br/>'.$jour;
         }
     }
 }
+
 $maclass="Action";
 $hospital=new $maclass();
 $hospital->nom="Sendwe";
@@ -29,6 +38,8 @@ $hospital->heurfin=24;
 $hospital->info();echo '<br/>';
 var_dump($hospital);
 $str=gettype($hospital);
-if(!($hospital instanceof $maclass)){
+
+if(!($hospital instanceof $maclass))
+{
     echo '<br/>Ok';
 }
